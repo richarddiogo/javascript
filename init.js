@@ -56,3 +56,17 @@ var moduleEvents = (function(){
         }
    }
 })
+
+//IIFE
+var fomartaMoeda = (function(){
+    "use strict"; // forca      
+    var _nome = 10;  // _ privado                                     
+    var moedaParaNumero = function (x,y){return x*y};
+    var NumeroParaMoeda =function(x){return x};
+                                                     
+    return {nPR:NumeroParaMoeda,mPN:numeroPraMoeda};
+
+})
+
+formataMoeda.nPR(200,300);
+formataMoeda.mPN(300);
